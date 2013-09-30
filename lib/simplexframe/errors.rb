@@ -1,5 +1,5 @@
 module Simplexframe
-	class SimplexframeError < StandardError; end
+	class SimpleError < StandardError; end
 	class ConfigFileMissingError < SimpleError; end
 	class IncorrectConfigFileError < SimpleError; end
 	class InvalidSimplexframePageError < SimpleError; end
