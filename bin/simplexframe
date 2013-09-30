@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+simplexframe_path = File.expand_path('../../lib', __FILE__)
+#puts simplexframe_path 
+$:.unshift(simplexframe_path)
+
+require 'simplexframe/cli'
