@@ -6,6 +6,7 @@ module Simplexframe
 			@config = config.clone
 			defined_browser?
 			@browser = start_browser
+			@browser.cookies.clear
 			raise "can not start browser, maybe you need to download the driver for #{@config.browser}" if @browser.nil?
 			define_goto_methods
 		end
