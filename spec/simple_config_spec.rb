@@ -8,11 +8,11 @@ describe Simplexframe::Config do
 	end
 
 	it 'should raise error when initialized with a missing file' do
-		lambda {Simplexframe::Config.new('not_exist_file')}.should raise_error(Simplexframe::ConfigFileMissingError)
+		lambda {Simplexframe::Config.new('not_exist_file')}.should raise_error()
 	end
 
 	it 'should NOT raise error when initialized with an exist file' do
-		lambda {Simplexframe::Config.new(@valid_file)}.should_not raise_error(Simplexframe::ConfigFileMissingError)
+		lambda {Simplexframe::Config.new(@valid_file)}.should_not raise_error()
 	end
 
 	it 'should load yaml file correctly' do
