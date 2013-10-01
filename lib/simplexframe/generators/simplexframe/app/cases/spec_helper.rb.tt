@@ -4,13 +4,13 @@ require 'erb'
 require 'psych'
 
 begin
-	require 'simplex'
+	require 'simplexframe'
 rescue LoadError
-	puts 'you need using "gem install simplex" to install simplex first'
+	puts 'you need using "gem install simplexframe" to install simplexframe first'
 end
 
 <% require 'active_support/all' %>
-Simplex::Initializer.new(File.expand_path(File.join('.')), '<%= app_name %>')
+Simplexframe::Initializer.new(File.expand_path(File.join('.')), '<%= app_name %>')
 $:.unshift(File.expand_path File.join('.'))
 
 RSpec.configure do |c|
