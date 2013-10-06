@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "simplexframe"
-  s.version = "0.0.02"
+  s.version = "0.0.03"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["thesimplex"]
