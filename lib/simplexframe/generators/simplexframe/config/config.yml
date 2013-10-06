@@ -1,4 +1,4 @@
 ---
-browser: chrome
+browser: ie
 host: www.mantisbt.org/demo/
 tags: baidu, google

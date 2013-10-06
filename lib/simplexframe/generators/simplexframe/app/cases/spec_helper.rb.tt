@@ -44,6 +44,6 @@ RSpec.configure do |c|
 	end
 
 	c.after(:suite) do
-		$navi.close
+		$navi.close unless $navi.nil?
 	end
 end
