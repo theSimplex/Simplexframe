@@ -18,9 +18,19 @@ module Simplexframe
 		end
 
 		def start_browser
-			Watir::Browser.new @config.browser.to_sym
-		end
+      
+    unless @config.url.nil?
+      capabilities = Selenium::WebDriver::Remote::Capabilities.new
+      capabilities.browser_name = @config.browser.to_sym
 
+      browser = Watir::Browser.new( 
+      :remote, 
+      :url => @config.url, 
+      :desired_capabilities => capabilities)
+    else
+      Watir::Browser.new @config.browser.to_sym
+    end
+  end
 		def define_goto_methods
 			p Module.constants.grep(/Page$/) if $debug
 			Module.constants.grep(/Page$/).each do |page_klass|
