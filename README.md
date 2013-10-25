@@ -89,6 +89,6 @@ Contributing to simplexframe
 Copyright
 ---------
 
-Copyright (c) 2013 easonhan. See LICENSE.txt for
+Copyright (c) 2013 simplex. See LICENSE.txt for
 further details.
 
