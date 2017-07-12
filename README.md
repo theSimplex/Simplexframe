@@ -1,3 +1,5 @@
+ -- GEM is no longer maintained --
+
 simplexframe
 =====================
 
